@@ -33,7 +33,7 @@ function eliminar_peaje() {
     eliminar_peaje[eliminar_peaje.length-1].remove()
 }
 
-/* Calcular costo del viaje (sumando todos los peajes y todos los demás inputs) */
+/* Calcular costo del viaje (sumando todos los peajes y todos los demás inputs ) */
 function calcular_costo() {
     let peajes = document.querySelectorAll('.peaje');
     let costo_viaje = (distancia.value/eficiencia_combustible.value)*galon.value
