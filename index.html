@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planeador de viajes</title>
+</head>
+
+<body>
+    <div>
+        <div>
+            <label for="distancia">
+                Distancia a la que va a recorrer (en km):
+                <input type="number" id="distancia">
+            </label>
+        </div>
+        <div>
+            <label for="eficiencia-combustible">
+                Eficiencia del combustible del vehiculo:
+                <input type="number" id="eficiencia-combustible">
+            </label>
+        </div>
+        <div>
+            <label for="galon">
+                Costo del galón del combustible:
+                <input type="number" id="galon">
+            </label>
+        </div>
+        <div class="cont-peaje">
+            <label for="peaje">
+                Costo de cada peaje:
+                <input type="number" class="peaje">
+            </label>
+            <button id="agregar-peaje">+</button>
+            <button id="eliminar-peaje">-</button>
+        </div>
+    </div>
+    <div>
+        <h3>Resultado</h3>
+        <div id="resultado"></div>
+        <div id="mensaje-error"></div>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
