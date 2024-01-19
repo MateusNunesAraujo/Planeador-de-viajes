@@ -9,43 +9,87 @@
 </head>
 
 <body>
-    <div class="informacion_viaje">
-        <div>
-            <label for="distancia">
-                Distancia a la que va a recorrer (en km):
-                <input type="number" id="distancia">
-            </label>
+    <div></div>
+    <main>
+        <div class="informacion-viaje">
+            <div>
+                <label for="distancia">
+                    Distancia a la que va a recorrer (en km):
+                    <input type="number" id="distancia">
+                </label>
+            </div>
+            <div>
+                <label for="eficiencia-combustible">
+                    Eficiencia del combustible del vehiculo:
+                    <input type="number" id="eficiencia-combustible">
+                </label>
+            </div>
+            <div>
+                <label for="galon">
+                    Costo del galón del combustible:
+                    <input type="number" id="galon">
+                </label>
+            </div>
+            <div class="cont-peaje">
+                <label for="peaje">
+                    Costo de cada peaje:
+                    <input type="number" class="peaje">
+                </label>
+                <button id="agregar-peaje">+</button>
+                <button id="eliminar-peaje">-</button>
+            </div>
+            <button id="calcular"> <span>Button</span>
+            </button>
+            <div>
+                <h3 >Costo aproximado del viaje</h3>
+                <div id="costo-viaje"></div>
+                <h3>Horas que estará viajando</h3>
+                <div id="horas-viajando"></div>
+                <div id="advertencia"></div>
+            </div>
         </div>
-        <div>
-            <label for="eficiencia-combustible">
-                Eficiencia del combustible del vehiculo:
-                <input type="number" id="eficiencia-combustible">
-            </label>
-        </div>
-        <div>
-            <label for="galon">
-                Costo del galón del combustible:
-                <input type="number" id="galon">
-            </label>
-        </div>
-        <div class="cont-peaje">
-            <label for="peaje">
-                Costo de cada peaje:
-                <input type="number" class="peaje">
-            </label>
-            <button id="agregar-peaje">+</button>
-            <button id="eliminar-peaje">-</button>
-        </div>
-       <button id="calcular"> <span>Button</span>
-</button>
+        
+    </main>
+    <div class="cartel-bienvenida">
+        <h1>Bienvenido a nuestra pagina web</h1>
+        <p>En esta pagina podrás planificar tu viaje sobre el costo aproximado que tendrás teniendo en cuenta los <b>kilometros que recorrerás</b>,<b>la cantidad de combustible por kilometro que contiene tu vehiculo</b>, <b>el costo del combustible por galón</b> y <b>
+            el costo de cada peaje
+        </b>.</p>
+        <button class="inicio">Empezar prueba</button>
     </div>
-    <div>
-        <h3>Costo aproximado del viaje</h3>
-        <div id="costo-viaje"></div>
-        <h3>Horas que estará viajando</h3>
-        <div id="horas-viajando"></div>
-        <div id="advertencia"></div>
-    </div>
+    <footer><div class="tooltip-container">
+        <div class="tooltip">
+          <div class="profile">
+            <div class="user">
+              <div class="img">Ui</div>
+              <div class="details">
+                <div class="name">User</div>
+                <div class="username">@username</div>
+              </div>
+            </div>
+            <div class="about">500+ Connections</div>
+          </div>
+        </div>
+        <div class="text">
+          <a class="icon" href="https://freecodez.com/">
+            <div class="layer">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fab fa-linkedin">
+                <svg viewBox="0 0 448 512" height="1em">
+                  <path
+                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                  ></path>
+                </svg>
+              </span>
+            </div>
+            <div class="text">LinkedIn</div>
+          </a>
+        </div>
+      </div>
+      </footer>
 </body>
 <script src="main.js"></script>
 
