@@ -10,14 +10,23 @@ let inicio_btn = document.querySelector('.inicio')
 let cartel_bienvenida = document.querySelector('.cartel-bienvenida')
 let main = document.querySelector('main')
 let horas_viajando_cont = document.querySelector('#horas-viajando')
+let cont_redes_sociales = document.querySelector('.contenedor-redes-sociales')
 
 eventos()
 /* Función con todos los eventos */
 function eventos() {
+    /* Eventos de logica */
     agregar_peaje_btn.addEventListener('click',agregar_peaje) 
     eliminar_peaje_btn.addEventListener('click',eliminar_peaje)  
     calcular_btn.addEventListener('click',calcular_costo)
     inicio_btn.addEventListener('click',mostrar)
+    /* Eventos de diseño */
+    document.querySelector('.redes-sociales').addEventListener('click',()=>{
+        cont_redes_sociales.classList.add('mostrar-redes-sociales')
+    })
+    document.querySelector('.cerrar-modal').addEventListener('click',()=>{
+        cont_redes_sociales.classList.remove('mostrar-redes-sociales')
+    })
         
     
 }
@@ -31,7 +40,8 @@ function agregar_peaje() {
     let input_peaje = document.createElement('input')
     input_peaje.type = 'number'
     input_peaje.classList.add('peaje')
-    cont_peaje.children[0].appendChild(input_peaje)
+    console.log(cont_peaje)
+    cont_peaje.children[0].children[0].appendChild(input_peaje)
 }
 
 /* Eliminar peaje */
