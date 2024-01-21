@@ -1,6 +1,28 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto/Roboto-Regular.ttf');
+}
+
+@font-face{
+  font-family: 'Roboto-Black';
+  src: url('Roboto/Roboto-Black.ttf');
+  }
+
 * {
+  font-family: 'Roboto';
     margin: 0;
     padding: 0;
+}
+
+h1{
+  text-align: center;
+  font-family: 'Roboto-Black' !important;
+}
+
+input{
+  font-size: 16px;
+  height: 25px;
+  border-color: transparent;
 }
 
 body {
@@ -11,7 +33,7 @@ body {
 }
 
 main {
-    transition: 1s ease;
+    transition: 1.5s;
     position: fixed;
     left: 10000px;
     font-size: 18px;
@@ -26,21 +48,27 @@ main {
 }
 
 .cont-costo-tiempo{
+  margin: auto;
   text-align: center;
   display: flex;
   gap: 30px;
 }
 
+#costo-viaje,#horas-viajando{
+color: #fff;
+}
+
 .informacion-viaje{
   gap: 15px;
-  max-width: 900px;
+  max-width: 705px;
   margin: auto;
-  width: 70%;
+  width: 45%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
 label{
+  color: #fff;
   display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -55,13 +83,18 @@ label{
 }
 
 #agregar-peaje,#eliminar-peaje{
-
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  height: 25px;
+  border: none;
   width: 45px;
+  background: rgba(131, 58, 180, 1) 0%;
   
 }
 .peaje{
   height: 20px;
-width: 70px;
+width: 60px;
 }
 
 .cartel-bienvenida {
@@ -459,6 +492,7 @@ margin-top: 50px;
   align-items: center;
 }
 .iconos-redes-sociales{
+  gap: 45px;
   text-align: center;
   display: flex;
   align-items: center;
@@ -492,11 +526,39 @@ left: 0;
 
 /* Medias querys */
 
-@media (max-width:425px) {
+@media (max-width:500px) {
+  
+  .primer-programador, .segundo-programador{
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+  .cerrar-modal{
+  margin-top: 8px;
+  }
+  .informacion-viaje{
+    font-size: 16px;
+  width: 70%;
+  gap: 12px;
+  }
+  #distancia,#velocidad,#eficiencia-combustible,#galon{
+  width: 200px;
+  }
+  .iconos-redes-sociales{
+  gap: 10px;
+  }
   .cont-bienvenida p{
   font-size: 16px;
   }
   .cont-bienvenida{
-  gap: 25px;
+  gap: 35px;
+  }
+
+  .redes-sociales{
+    height: 30px;
   }
 }
+
+
+/* Demostracion */
+
